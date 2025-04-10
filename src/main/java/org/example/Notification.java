@@ -9,7 +9,5 @@ public abstract class Notification {
        this.message = message;
     }
 
-    public abstract void send(String message);
-
-
+    public abstract void send(String recipient, String message);
 }

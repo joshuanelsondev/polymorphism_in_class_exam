@@ -8,8 +8,8 @@ public class SMSNotification extends Notification {
 
     @Override
     public void send(String recipient, String message) {
-        System.out.println("Sending to: +1234567890");
-        System.out.println("SMS content: Test SMS");
+        System.out.printf("Sending to: %s", recipient);
+        System.out.printf("SMS content: %s", message);
         System.out.println("Connecting to SMS gateway...");
         System.out.println("Sending SMS...");
     }
