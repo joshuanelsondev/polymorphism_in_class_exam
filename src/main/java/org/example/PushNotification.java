@@ -1,9 +1,13 @@
 package org.example;
 
-public class PushNotification extends Notification {
+import java.util.Arrays;
 
-    public PushNotification(String recipient, String message) {
+public class PushNotification extends Notification {
+    public String deviceInfo;
+
+    public PushNotification(String recipient, String message, String deviceInfo) {
         super(recipient, message);
+        this.deviceInfo = deviceInfo;
     }
 
     @Override

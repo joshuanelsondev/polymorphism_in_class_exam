@@ -17,5 +17,7 @@ public class NotificationService {
     }
 
     public void sendNotification(Notification notification) {
+        notification.send(notification.recipient, notification.message);
+        notification.displayInfo(notification.recipient, notification.message);
     }
 }
